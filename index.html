@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>تست Vercel در ایران</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            direction: rtl;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>تست اتصال به Vercel از داخل ایران</h1>
+    <div class="success">اگر این عکس را می‌بینید، یعنی Vercel در ایران باز است!</div>
+    <img src="/api/photo" alt="عکس تست">
+    <p>آدرس فعلی: <span id="url"></span></p>
+    <script>
+        document.getElementById('url').textContent = window.location.href;
+    </script>
+</body>
+</html>
